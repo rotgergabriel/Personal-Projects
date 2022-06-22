@@ -1,0 +1,24 @@
+.calc {
+    display: flex;
+    display: inline-block;
+    
+    border: 1px solid rgb(0, 0, 0);
+    background-color: rgba(15, 15, 15, 0.575);
+}
+
+.calc--header {
+    font-size: 1em;
+    color: rgb(255, 255, 255);
+
+    font-family:'Times New Roman', Times, serif;
+    margin-top: 10px;
+}
+
+.calc--input {
+    padding: 10px;
+}
+
+.table {
+    display: flex;
+    justify-content: space-evenly;
+}
