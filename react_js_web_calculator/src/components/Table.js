@@ -6,50 +6,28 @@ const Table = () => {
     return(
         <div className="calc">
             <h6 className="calc--header">Calculator</h6>
-            <input className="calc--input" type='text'></input>
+            <input id="inputProps" className="calc--input" type='text'></input>
             <table className="table">
                 <tbody className="table--tbody">
                     <tr className="table--tr">
                         <td className="table--td">
-                            <button className="table--button">
-                                %
-                            </button>
-                        </td>
-                        <td className="table--td">
-                            <button className="table--button">
-                                CE
-                            </button>
-                        </td>
-                        <td className="table--td">
-                            <button className="table--button">
+                            <button className="table--button__reset">
                                 C
                             </button>
                         </td>
                         <td className="table--td">
-                            <button className="table--button">
-                                X
-                            </button>
-                        </td>
-                    </tr>
-                    <tr className="table--tr">
-                        <td className="table--td">
-                            <button className="table--button">
-                                1/X
-                            </button>
-                        </td>
-                        <td className="table--td">
-                            <button className="table--button">
-                                x2
-                            </button>
-                        </td>
-                        <td className="table--td">
-                            <button className="table--button">
-                                2RX
-                            </button>
-                        </td>
-                        <td className="table--td">
-                            <button className="table--button">
+                            <button className="table--button__algebraic-operations">
                                 /
+                            </button>
+                        </td>
+                        <td className="table--td">
+                            <button className="table--button__algebraic-operations">
+                                *
+                            </button>
+                        </td>
+                        <td className="table--td">
+                            <button className="table--button__algebraic-operations">
+                                x
                             </button>
                         </td>
                     </tr>
@@ -70,8 +48,8 @@ const Table = () => {
                             </button>
                         </td>
                         <td className="table--td">
-                            <button className="table--button">
-                                *
+                            <button className="table--button__algebraic-operations">
+                                %
                             </button>
                         </td>
                     </tr>
@@ -92,7 +70,7 @@ const Table = () => {
                             </button>
                         </td>
                         <td className="table--td">
-                            <button className="table--button">
+                            <button className="table--button__algebraic-operations">
                                 -
                             </button>
                         </td>
@@ -114,7 +92,7 @@ const Table = () => {
                             </button>
                         </td>
                         <td className="table--td">
-                            <button className="table--button">
+                            <button className="table--button__algebraic-operations">
                                 +
                             </button>
                         </td>
@@ -136,7 +114,7 @@ const Table = () => {
                             </button>
                         </td>
                         <td className="table--td">
-                            <button className="table--button">
+                            <button className="table--button__result">
                                 =
                             </button>
                         </td>

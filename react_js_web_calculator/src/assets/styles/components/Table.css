@@ -1,24 +1,89 @@
+*{
+    font-family: 'Black Ops one', cursive;
+}
+
 .calc {
     display: flex;
     display: inline-block;
     
-    border: 1px solid rgb(0, 0, 0);
-    background-color: rgba(15, 15, 15, 0.575);
+    width: 250px;
+    height: auto;
+    padding: 2px;
+    background-color: rgb(0, 0, 0);
+    user-select: none;
+    
+    border: solid;
+    border-image-slice: 1;
+    border-width: 6px;
+    border-image-source: 
+        linear-gradient(
+            60deg,
+            #b16ec4,
+            #5f97b9);
 }
 
 .calc--header {
-    font-size: 1em;
+    font-size: 1.5em;
     color: rgb(255, 255, 255);
 
     font-family:'Times New Roman', Times, serif;
+    margin: 3px;
     margin-top: 10px;
 }
 
 .calc--input {
-    padding: 10px;
+    width: 97%;
+    height: 60px;
+
+    padding: 3px;
+    text-align: right;
+    font-size: 30px;
+    color: #225240;
+    
+    background-color: rgb(255, 255, 255);
+    
+    border: 1px solid white;
+    outline: none;
 }
 
 .table {
-    display: flex;
-    justify-content: space-evenly;
+    width: 100%;
+}
+
+.table--tbody {
+    width: 100%;
+    margin: 3px;
+}
+
+.table--td {
+    width: 70px;
+}
+
+.table--button__reset {
+    width: 60px;
+    height: 40px;
+    border-radius: 70px 100%;
+    background-color: rgb(104, 104, 246);
+}
+
+.table--button__result {
+    width: 60px;
+    height: 40px;
+    border-radius: 70px 100%;
+
+    background-color: rgb(246, 183, 67);
+}
+
+.table--button__algebraic-operations {
+    width: 60px;
+    height: 40px;
+    border-radius: 70px 100%;
+
+    background-color: rgb(161, 161, 161)
+}
+
+.table--button {
+    width: 60px;
+    height: 40px;
+    border-radius: 70px 100%;
 }
