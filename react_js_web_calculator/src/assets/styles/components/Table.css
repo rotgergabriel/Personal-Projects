@@ -11,38 +11,54 @@
     padding: 2px;
     background-color: rgb(0, 0, 0);
     user-select: none;
+    border: 2px solid rgb(39, 39, 39);
+    border-radius: 20px;
+
+    box-shadow: 6px 6px 4px 3px rgba(0, 0, 0, 0.508);
     
-    border: solid;
-    border-image-slice: 1;
-    border-width: 6px;
-    border-image-source: 
-        linear-gradient(
-            60deg,
-            #b16ec4,
-            #5f97b9);
 }
 
 .calc--header {
-    font-size: 1.5em;
+    font-size: 1em;
     color: rgb(255, 255, 255);
 
-    font-family:'Times New Roman', Times, serif;
+    font-family:'Times New Roman', Times, serif ;
+
     margin: 3px;
     margin-top: 10px;
 }
 
 .calc--input {
-    width: 97%;
-    height: 60px;
+    width: 96%;
+    height: 30px;
 
     padding: 3px;
+    
     text-align: right;
     font-size: 30px;
-    color: #225240;
+    color: #313030;
     
     background-color: rgb(255, 255, 255);
     
-    border: 1px solid white;
+    border-top: 0px;
+    border-bottom: 0px;
+    outline: none;
+}
+
+.calc--input__old {
+    width: 96%;
+    height: 30px;
+
+    padding: 3px;
+    
+    text-align: right;
+    font-size: 12px;
+    color: #2c2c2c;
+    
+    background-color: rgb(255, 255, 255);
+    
+    border-top: 0px;
+    border-bottom: 0px;
     outline: none;
 }
 
@@ -52,11 +68,22 @@
 
 .table--tbody {
     width: 100%;
-    margin: 3px;
 }
 
 .table--td {
     width: 70px;
+}
+
+.table--button {
+    width: 60px;
+    height: 40px;
+    border-radius: 70px 100%;
+}
+
+.table--button:hover{
+    background-color: rgb(82, 82, 82);
+    color: white;
+    transition: all 0.3s;
 }
 
 .table--button__reset {
@@ -64,6 +91,11 @@
     height: 40px;
     border-radius: 70px 100%;
     background-color: rgb(104, 104, 246);
+}
+
+.table--button__reset:hover {
+    background-color: rgb(255, 0, 0);
+    transition: all 0.3s;
 }
 
 .table--button__result {
@@ -74,6 +106,11 @@
     background-color: rgb(246, 183, 67);
 }
 
+.table--button__result:hover {
+    background-color: rgb(0, 255, 4);
+    transition: all 0.3s;
+}
+
 .table--button__algebraic-operations {
     width: 60px;
     height: 40px;
@@ -82,8 +119,24 @@
     background-color: rgb(161, 161, 161)
 }
 
-.table--button {
+.table--button__algebraic-operations:hover {
+    background-color: #ffffff;
+    color: rgb(252, 5, 5);
+    transition: all 0.3s;
+}
+
+.table--button__delete {
     width: 60px;
     height: 40px;
     border-radius: 70px 100%;
+
+    background-color: rgb(161, 161, 161)
 }
+
+.table--button__delete:hover {
+    background-color: #ffffff;
+    color: rgb(252, 5, 5);
+    transition: all 0.3s;
+}
+
+
