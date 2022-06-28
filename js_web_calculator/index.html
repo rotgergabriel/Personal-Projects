@@ -5,14 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./styles/index.css" rel="stylesheet" type="text/css">
-
+    <script src="./Display.js"></script>
+    <script src="./Calculator.js"></script>
+    <script src="./index.js" defer></script>
     <title>Js_web_calculator</title>
 </head>
 <body>
     <div class="calc">
             <h6 class="calc--header">Calculator</h6>
-            <input id="oldValue" class="calc--input__old" type='text'></input>
-            <input id="newValue" placeholder="0" class="calc--input" type='text'></input>
+            <div id="oldValue" class="calc--input__old"></div>
+            <div id="newValue" class="calc--input"></div>
             <table class="table">
                 <tbody class="table--tbody">
                     <tr class="table--tr">
