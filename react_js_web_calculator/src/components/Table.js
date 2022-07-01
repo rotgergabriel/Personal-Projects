@@ -5,26 +5,8 @@ const Table = () => {
 
     const newProps = parseFloat(document.getElementById('newValue'))
     const oldProps = parseFloat(document.getElementById('oldValue'))
-    
     const numberButtons = parseInt(document.querySelectorAll('.table--button'))
     const operators = parseInt(document.querySelectorAll('.table--button__algebraic-operations'))
-
-    //Operaciones algebraicas
-    const sum = (num1, num2) => {
-        return num1 + num2
-    }
-    const rest = (num1, num2) => {
-        return num1 - num2
-    }
-    const split = (num1, num2) => {
-        return num1 / num2
-    }
-    const multiply = (num1, num2) => {
-        return num1 * num2
-    }
-    const porcentage = (num1, num2) => {
-        return ((num1*(num2/100)))
-    }
 
     return(
         <div className="calc">
